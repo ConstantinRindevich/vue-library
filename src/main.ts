@@ -23,3 +23,15 @@ new Vue({
   router,
   render: h => h(App)
 }).$mount('#app')
+
+
+var br = navigator.userAgent;
+if (br.indexOf("Chrome") > 0 && br.indexOf("OPR") < 1) {
+  br = br.substr(br.indexOf("Chrome") + 7, br.indexOf("Safari") - br.indexOf("Chrome") - 7);
+  if (br.split('.')[0] !== '80') {
+    alert('Работа и внешний вид приложения проверялась только в браузере Google Chrome версии 80')
+  }
+}
+else {
+  alert('Работа и внешний вид приложения проверялась только в браузере Google Chrome')
+}
