@@ -1,0 +1,9 @@
+$hover-color: #f3f3f3;
+$width-left-area: 54%;
+$background-white-color: #fff;
+$button-favorites-width-height: 40px;
+$button-favorites-margin-right: 15px;
+
+@mixin control-box-shadow {
+  box-shadow: 0px 20px 20px rgba(0,0,0, 0.2);
+}

@@ -1,0 +1,20 @@
+$padding-x: 70px;
+$padding-x-min: 20px;
+.list-area {
+  display: inline-block;
+  position: absolute;
+  box-sizing: content-box;
+  height: 100%;
+}
+@media screen and (min-width: 576px) {
+  .list-area, .list-area {
+    width: 100% - $width-left-area !important;
+    position: relative;
+    padding: 40px $padding-x 70px !important;
+    min-height: 654px;
+  }
+}
+.control {
+  display: flex;
+  margin-bottom: 20px;
+}
